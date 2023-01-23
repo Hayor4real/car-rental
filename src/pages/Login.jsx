@@ -21,14 +21,14 @@ const Login = () => {
         <div className="row ">
           <div className="col mt-4 col-md-8 offset-md-2">
             <form onSubmit={handleSubmit(formSubmit)}>
-              <div className="mb-3">
-                <label htmlFor="exampleInputEmail1" className="form-label">
+              <div className="mb-2">
+                <label htmlFor="exampleInputUsername1" className="form-label">
                   Username
                 </label>
                 <input
                   type="text"
                   className={`form-control ${errors.name ? "is-invalid" : ""}`}
-                  id="exampleInputEmail1"
+                  id="exampleInputUsername1"
                   {...register("name", { required: true })}
                 />
                 {errors.name && (
@@ -38,7 +38,7 @@ const Login = () => {
                   Email
                 </label>
                 <input
-                  type="text"
+                  type="email"
                   className={`form-control ${errors.email ? "is-invalid" : ""}`}
                   id="exampleInputEmail1"
                   {...register("email", {
