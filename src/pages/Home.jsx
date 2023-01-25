@@ -8,6 +8,7 @@ import carData from "../assets/data/carData";
 import CarItem from "../components/UI/CarItem";
 import BecomeDriverSection from "../components/UI/BecomeDriverSection";
 import BlogList from "../components/UI/BlogList";
+import Footer from "./Footer";
 
 const Home = () => {
   return (
@@ -63,6 +64,7 @@ const Home = () => {
           </Row>
         </Container>
       </section>
+      <Footer />
     </Helmet>
   );
 };

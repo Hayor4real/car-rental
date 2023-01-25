@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
+import Footer from "../../pages/Footer";
 import Routers from "../../routers/Routers";
 
 const Layout = () => {
@@ -10,7 +10,6 @@ const Layout = () => {
       <div>
         <Routers />
       </div>
-      <Footer />
     </Fragment>
   );
 };

@@ -10,6 +10,10 @@ import NotFound from "../pages/NotFound";
 import Contact from "../pages/Contact";
 import Register from "../pages/Register";
 import Login from "../pages/Login";
+import BookingForm from "../pages/Form/BookingForm";
+import MultiForm from "../pages/Form/MultiForm";
+import SuccessConfirm from "../pages/SuccessConfirm";
+// import BookingForm from "../components/UI/BookingForm";
 
 const Routers = () => {
   return (
@@ -24,6 +28,9 @@ const Routers = () => {
       <Route path="/contact" element={<Contact />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
+      <Route path="/booking" element={<BookingForm />} />
+      <Route path="/multiform" element={<MultiForm />} />
+      <Route path="/sucess" element={<SuccessConfirm />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

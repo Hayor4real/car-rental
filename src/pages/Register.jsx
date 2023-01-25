@@ -21,14 +21,14 @@ const Register = () => {
       <div className="row">
         <div className="col mt-4 col-md-8 offset-md-2">
           <form onSubmit={handleSubmit(formSubmit)}>
-            <div className="mb-3">
-              <label htmlFor="exampleInputEmail1" className="form-label">
+            <div className="mb-3 ">
+              <label htmlFor="exampleInputFirstName1" className="form-label">
                 First Name
               </label>
               <input
                 type="text"
                 className={`form-control ${errors.name ? "is-invalid" : ""}`}
-                id="exampleInputEmail1"
+                id="exampleInputFirstName1"
                 {...register("name", { required: true })}
               />
               {errors.name && (
@@ -36,13 +36,13 @@ const Register = () => {
               )}
             </div>
             <div className="mb-3">
-              <label htmlFor="exampleInputEmail1" className="form-label">
+              <label htmlFor="exampleInputLastName1" className="form-label">
                 Last Name
               </label>
               <input
                 type="text"
                 className={`form-control ${errors.name ? "is-invalid" : ""}`}
-                id="exampleInputEmail1"
+                id="exampleInputLastName1"
                 {...register("name", { required: true })}
               />
               {errors.name && (
@@ -50,13 +50,13 @@ const Register = () => {
               )}
             </div>
             <div className="mb-3">
-              <label htmlFor="exampleInputEmail1" className="form-label">
+              <label htmlFor="exampleInputUserName" className="form-label">
                 UserName
               </label>
               <input
                 type="text"
                 className={`form-control ${errors.name ? "is-invalid" : ""}`}
-                id="exampleInputEmail1"
+                id="exampleInputUserName"
                 {...register("name", { required: true })}
               />
               {errors.name && (
@@ -64,13 +64,13 @@ const Register = () => {
               )}
             </div>
             <div className="mb-3">
-              <label htmlFor="exampleInputEmail1" className="form-label">
+              <label htmlFor="exampleInputAge" className="form-label">
                 Age
               </label>
               <input
                 type="number"
                 className={`form-control ${errors.age ? "is-invalid" : ""}`}
-                id="exampleInputEmail1"
+                id="exampleInputAge"
                 {...register("age", { min: 18, max: 60, valueAsNumber: true })}
               />
               {errors.age?.type === "min" && (
@@ -101,7 +101,7 @@ const Register = () => {
             </div>
 
             <div className="mb-3">
-              <label htmlFor="exampleInputEmail1" className="form-label">
+              <label htmlFor="exampleInputPassword1" className="form-label">
                 Password
               </label>
               <input
@@ -109,7 +109,7 @@ const Register = () => {
                 className={`form-control ${
                   errors.password ? "is-invalid" : ""
                 }`}
-                id="exampleInputEmail1"
+                id="exampleInputPassword1"
                 {...register("password", { minLength: 5, maxLength: 20 })}
               />
               {errors.password?.type === "minLength" && (

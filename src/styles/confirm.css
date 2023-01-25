@@ -1,0 +1,30 @@
+.detailsInfo {
+  text-align: center;
+
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  margin: 50px auto;
+  width: 70%;
+}
+
+.detailsInfo .btnChange {
+  width: 10rem;
+  color: white;
+  background-color: blue;
+  margin-right: 2em;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0.5rem;
+  text-transform: uppercase;
+  border: none;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px;
+  margin-right: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+  .detailsInfo .btnChange {
+    width: 30%;
+    margin: 20px auto;
+  }
+}
