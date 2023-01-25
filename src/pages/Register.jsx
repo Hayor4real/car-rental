@@ -19,6 +19,9 @@ const Register = () => {
   return (
     <div className="container">
       <div className="row">
+        <h4 style={{ textAlign: "center", marginTop: "15px" }}>
+          Register to become a driver
+        </h4>
         <div className="col mt-4 col-md-8 offset-md-2">
           <form onSubmit={handleSubmit(formSubmit)}>
             <div className="mb-3 ">

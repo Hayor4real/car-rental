@@ -68,13 +68,18 @@
   color: #7c8a97;
 }
 
-.find__car-btn {
+/* btn find__car-btn */
+.btn.find__car-btn {
   background: #000d6b;
   color: #fff;
   padding: 8px 15px;
   width: 100%;
   border: none;
   outline: none;
+}
+.btn.find__car-btn:hover {
+  background: #5864c3;
+  transform: scale(1);
 }
 
 @media only screen and (max-width: 992px) {
