@@ -21,3 +21,18 @@
   font-weight: 500;
   margin: 30px 0 10px;
 }
+
+@media only screen and (max-width: 451px) {
+  .popup img {
+    width: 20%;
+    margin: auto 150px;
+  }
+  .popup h1,
+  p {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    margin: 10px;
+    padding-right: 2px;
+  }
+}
