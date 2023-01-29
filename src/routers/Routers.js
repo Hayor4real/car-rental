@@ -30,6 +30,7 @@ const Routers = () => {
       <Route path="/register" element={<Register />} />
       <Route path="/booking" element={<BookingForm />} />
       <Route path="/multiform" element={<MultiForm />} />
+
       <Route path="/sucess" element={<SuccessConfirm />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
