@@ -17,6 +17,14 @@ const navLinks = [
     path: "blogs",
     display: "Blog",
   },
+  {
+    path: "login",
+    display: "Login",
+  },
+  {
+    path: "register",
+    display: "Register",
+  },
 ];
 
 const Header = () => {
@@ -97,7 +105,7 @@ const Header = () => {
               className="d-flex align-items-center justify-content-end"
             >
               <button className="header__btn ">
-                <Link to="/contact">
+                <Link>
                   <i class="ri-phone-line"></i>Request a call
                 </Link>
               </button>
