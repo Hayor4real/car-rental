@@ -13,7 +13,7 @@ const Register = () => {
 
     alert("Registration Sucessful");
 
-    window.location.replace("/login");
+    window.location.replace("/");
   };
 
   return (
